@@ -6,6 +6,7 @@
 	color: #cc8a60;
 }
 
+
 /*******************LOADING*******************/
 .tela-loading{
 	position: absolute;
@@ -50,7 +51,13 @@
 	justify-content: space-around;
 	align-items: center;
 }
-
+.topo-scroll .topo__fixo{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	background-color: #efcead;
+}
 .logo-topo {
 	font-family: 'Great Vibes', cursive;
 	color: #cc8a60;
@@ -61,23 +68,28 @@
 }
 
 .menu-principal {
-	width: 390px;
+	width: 35rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
+.item__menu {
+	font-size: 1.5rem;
+	font-family: 'Great Vibes';
+}
+
 /*******************SERVIÇOS*******************/
 #servicos {
-	height: auto;
-	display: flex;
-	justify-content: space-between;
-	background-color: #f8e8d9;
-	padding: 50px 0;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8e8d9;
+    margin-top: 100px;
 }
 .servicos-tcc {
 	flex: 1 1;
-	margin: 42px 42px 0 42px;
+	margin: 70px 42px 0 42px;
 }
 .titulo-tcc {
 	padding: 10px;
@@ -97,7 +109,7 @@
 .espaco-blocos{
 	display: flex;
 	height: auto;
-	margin-top: 5%;
+	margin: 5%;
 }
 .blocos{
 	background-color: #f1f1f1;
@@ -148,6 +160,12 @@
 	margin: 0 auto;
 }
 
+.blocos h3 {
+    font-family: 'Great Vibes';
+    font-size: 2rem;
+    color: #cd8e66;
+}
+
 /*******************QUEM SOU*******************/
 #quem-sou {
 	display: flex;
@@ -170,6 +188,15 @@
 	border: 5px double #cc8a60;
 
 }
+.quem-txt h1 {
+    color: #cd8e66;
+    font-family: 'Great Vibes';
+}
+.quem-txt h2 {
+    color: #cd8e66;
+    font-family: 'Great Vibes';
+	font-size: 2rem;
+}
 .principais-demandas {
 	align-self: flex-start;
 	margin-top: 15px;
@@ -185,14 +212,14 @@
 
 /*******************INSTAGRAM*******************/
 
-/*.tanpom {
+.tanpom {
     width: 100%;
     height: 70px;
     position: relative;
-    bottom: 69px;
+    bottom: 45px;
     background-color: white;
 }
-*/
+
 
 /*******************FORMULARIO*******************/
 
@@ -294,3 +321,4 @@
 	height: -webkit-fill-available;
 	box-sizing: border-box;
 }
+

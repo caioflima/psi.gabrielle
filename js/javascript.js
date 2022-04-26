@@ -24,3 +24,35 @@ function typeWriter() {
   }
 }
 
+$(document).ready(function(){
+	if($("header").length)
+	{
+		var topo=$("header");
+		var janela=$(window);
+		function scroll()
+		{
+			topoAltura=$("header").outerHeight();
+			scrollTopAtual=janela.scrollTop();
+			tempotopo=3000;
+			janelaLargura=janela.width();
+			if(scrollTopAtual>202 && janelaLargura>460)
+			{
+				topo.addClass("topo-scroll");
+			}
+			else
+			{
+				topo.removeClass("topo-scroll");
+			}
+		}
+		janela.scroll(function(){
+			scroll();
+		});
+		janela.resize(function(){
+			scroll();
+		});
+		janela.on('load', function(){
+			scroll();
+		});
+	}
+});
+

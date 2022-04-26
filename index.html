@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>Psi.Gabrielle</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -7,39 +8,43 @@
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/normilaze.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/banner.css">
 	<meta charset="utf-8">
 
 </head>
+
 <body>
 
 	<!---------- LOADING ------------>
 
 	<div id="tela" class="tela-loading">
 		<span class="quadrado-loading"><span class="icone-loading">
-			<img src="imagens/logo-load.png">
-		</span></span>
+				<img src="imagens/logo-load.png">
+			</span></span>
 	</div>
 
 	<!------------- TOPO ------------------->
-	<div class="topo"> 
-		<div class="logo-topo">
-			<span>GabrielleNavarro</span>
-			<span>Psicóloga</span>
+	<header class="topo-scroll">
+		<div class="topo topo__fixo">
+			<div class="logo-topo">
+				<span>GabrielleNavarro</span>
+				<span>Psicóloga</span>
+			</div>
+			<ul class="menu-principal">
+				<li><a class="item__menu" href="#carousel">Home</a></li>
+				<li><a class="item__menu" href="#quem-sou">Quem Sou</a></li>
+				<li><a class="item__menu" href="#servicos">Serviços</a></li>
+				<li><a class="item__menu" href="#insta">Instagram</a></li>
+				<li><a class="item__menu" href="#formulario">Contato</a></li>
+			</ul>
 		</div>
-		<ul class="menu-principal">
-			<li><a href="#carousel">Home</a></li>
-			<li><a href="#quem-sou">Quem Sou</a></li>
-			<li><a href="#servicos">Serviços</a></li>
-			<li><a href="#insta">Instagram</a></li>
-			<li><a href="#formulario">Contato</a></li>
-		</ul>
-	</div>
+	</header>
 	<!------------- BANNER ----------------->
 	<div id="carousel">
 		<div class="carousel-inner">
-			<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+			<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+				checked="checked">
 			<div class="carousel-item carousel-item--1">
 				<div class="texto-banner">
 					<div class="icone"><img class="icone-banner" src="imagens/psychology-brown.png"></div>
@@ -53,7 +58,7 @@
 					<div class="icone"><img class="icone-banner" src="imagens/psychology-brown.png"></div>
 					<p class="nome-banner">Gabrielle Navarro</p>
 					<p class="funcao-banner">Psicóloga</p>
-				</div>       
+				</div>
 			</div>
 			<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
 			<div class="carousel-item carousel-item--3">
@@ -87,149 +92,171 @@
 		<div class="servicos-tcc">
 			<h2 class="titulo-tcc">TCC (Terapia Cognitiva Comportamental)</h2>
 			<p class="tcc">
-				<ul>
-					<li class="list-serv">Orientada para os objetivos e focada nos problemas.</li> 
-					<li class="list-serv">Enfatiza a colaboração e a participação ativa (trabalho em equipe).</li>
-					<li class="list-serv">É uma abordagem educativa, tem como objetivo ensinar o paciente a ser seu próprio terapeuta.
-						<li class="list-serv">Usa uma variada lista de técnicas para mudar o pensamento, o humor e o comportamento.</li> 
-						<li class="list-serv">Monitora continuamente o processo do cliente.</li> 
-						<li class="list-serv">Inclui planos de ação ("tarefas de casa").</li>
-					</ul> 
-				</p>
-				<p class="tcc-txt">Mais de 2.000 de estudos científico comprovam a eficácia da TCC para diversos diagnósticos.</p>
+			<ul>
+				<li class="list-serv">Orientada para os objetivos e focada nos problemas.</li>
+				<li class="list-serv">Enfatiza a colaboração e a participação ativa (trabalho em equipe).</li>
+				<li class="list-serv">É uma abordagem educativa, tem como objetivo ensinar o paciente a ser seu próprio
+					terapeuta.
+				<li class="list-serv">Usa uma variada lista de técnicas para mudar o pensamento, o humor e o
+					comportamento.</li>
+				<li class="list-serv">Monitora continuamente o processo do cliente.</li>
+				<li class="list-serv">Inclui planos de ação ("tarefas de casa").</li>
+			</ul>
+			</p>
+			<p class="tcc-txt">Mais de 2.000 de estudos científico comprovam a eficácia da TCC para diversos
+				diagnósticos.</p>
 
-			</div>
-			<div class="espaco-blocos">
-				<div class="blocos">
-					<img class="icone-bloco" src="imagens/psychology-brown.png" width="180" height="51" alt="Serviços de Bloco 1" loading="lazy">
-					<h3>Terapia Individual</h3>
-					<p class="bolco-txt">Atendimento individual com base na abordagem Cognitiva Comportamental.</p>
-					<button class="botao-bloco">Entre em contato<img class="botao-botao" src="./imagens/whatsappi.png"></button>
-				</div>				
-				<div class="blocos">
-					<img class="icone-bloco" src="imagens/psychology-brown.png" width="180" height="51" alt="Serviços de Bloco 1" loading="lazy">
-					<h3>Terapia de casal</h3>
-					<p class="bolco-txt">Modalidade focada no casal, com o objetivo de contribuir com a resolução de conflitos, abrindo espaço para uma comunicação mais reflexiva e assertiva, buscando um alinhamento entre as expectativas do casal.</p>
-					<button class="botao-bloco">Entre em contato<img class="botao-botao" src="./imagens/whatsappi.png"></button>
-				</div>
-			</div>	
 		</div>
-
-		<!------------- QUEM SOU ----------------->
-
-		<div id="quem-sou">
-			<div class="quem-img"></div>
-			<div class="quem-txt">
-				<h1>Sobre mim...</h1>
-				<div>
-					<p class="txt-sobre"> Me chamo Gabrielle Navarro, tenho 22 anos e sou psicóloga (CRP:     )graduada na Universidade de Guarulhos (UnG) no ano de 2021.2.</p> 
-
-					<p class="txt-sobre">Atendo pacientes maiores de idade, de forma online e presencial, com base na abordagem psicológica Cognitiva comportamental desde 2022.</p>
-				</div>
-
-				<h2>Principais demandas:</h2> 
-
-				<div class="principais-demandas">
-					<ol>
-						<li class="list-sobre">Ansiedade</li> 
-						<li class="list-sobre">Depressão</li> 
-						<li class="list-sobre">Terapia de casal</li> 
-						<li class="list-sobre">Autoconhecimento</li> 
-						<li class="list-sobre">Desenvolvimento pessoal</li> 
-						<li class="list-sobre">Entre outras...</li>
-					</ol>
-				</div>
+		<div class="espaco-blocos">
+			<div class="blocos">
+				<img class="icone-bloco" src="imagens/psychology-brown.png" width="180" height="51"
+					alt="Serviços de Bloco 1" loading="lazy">
+				<h3>Terapia Individual</h3>
+				<p class="bloco-txt">Atendimento individual com base na abordagem Cognitiva Comportamental.</p>
+				<button class="botao-bloco">Entre em contato<img class="botao-botao"
+						src="./imagens/whatsappi.png"></button>
+			</div>
+			<div class="blocos">
+				<img class="icone-bloco" src="imagens/psychology-brown.png" width="180" height="51"
+					alt="Serviços de Bloco 1" loading="lazy">
+				<h3>Terapia de casal</h3>
+				<p class="bloco-txt">Modalidade focada no casal, com o objetivo de contribuir com a resolução de
+					conflitos, abrindo espaço para uma comunicação mais reflexiva e assertiva, buscando um alinhamento
+					entre as expectativas do casal.</p>
+				<button class="botao-bloco">Entre em contato<img class="botao-botao"
+						src="./imagens/whatsappi.png"></button>
 			</div>
 		</div>
+	</div>
 
-		<!------------- INSTAGRAM ----------------->
-		<div id="insta">
-			<div data-mc-src="3befce34-6356-4da9-a48a-15b6797da70c#instagram"></div>
-			<script src="https://cdn2.woxo.tech/a.js#62321b84b1ec2a0021f9c042" async data-usrc></script>
-			<div class="tanpom"></div>	
-		</div>
-		<!------------- FORMULARIO ----------------->
-		<div id="formulario">
-			<div class="conteudo-form">
-				<h2 class="txt-form">Antes de preencher a lista, veja algumas informações sobre a terapia: </h2>
+	<!------------- QUEM SOU ----------------->
+
+	<div id="quem-sou">
+		<div class="quem-img"></div>
+		<div class="quem-txt">
+			<h1>Sobre mim...</h1>
+			<div>
+				<p class="txt-sobre"> Me chamo Gabrielle Navarro, tenho 22 anos e sou psicóloga (CRP:     )graduada na
+					Universidade de Guarulhos (UnG) no ano de 2021.2.</p>
+
+				<p class="txt-sobre">Atendo pacientes maiores de idade, de forma online e presencial, com base na
+					abordagem psicológica Cognitiva comportamental desde 2022.</p>
+			</div>
+
+			<h2>Principais demandas:</h2>
+
+			<div class="principais-demandas">
 				<ol>
-					<li class="list-form">Os atendimentos são baseados na Terapia Cognitiva;</li>
-					<li class="list-form">Cada sessão tem duração de 50 minutos;</li>
-					<li class="list-form">As sessões podem ser semanais ou quinzenais, sendo recomendado, inicialmente, a frequência semanal;</li>
-					<li class="list-form">Os atendimentos são realizados na modalidade presencial ou online;</li>
-					<li class="list-form">As sessões são todas estruturadas, baseadas em objetivos e resolução de problemas;</li>
-					<li class="list-form">Não atendo pessoas com menos de 18 anos de idade;</li>
-					<li class="list-form">Emito nota de todos atendimentos;</li>
-					<li class="list-form">Todo processo psicoterapêutico inicia-se com aceite de um contrato de prestação de serviços;</li>
-					<li class="list-form">Para agendamento, solicito pagamento antecipado;</li>
-					<li class="list-form">Não divulgo valores aqui, por restrição do Código de Ética do Psicólogo;</li>
-					<li class="list-form">Os valores são baseados nas médias da Tabela de Honorários do Conselho Federal de Psicologia;</li>
+					<li class="list-sobre">Ansiedade</li>
+					<li class="list-sobre">Depressão</li>
+					<li class="list-sobre">Terapia de casal</li>
+					<li class="list-sobre">Autoconhecimento</li>
+					<li class="list-sobre">Desenvolvimento pessoal</li>
+					<li class="list-sobre">Entre outras...</li>
 				</ol>
-				<div class="obs-form">
-					<p class="txt-form">Obs: Todos seus dados serão resguardados em sigilo, de acordo com o Art. 9° do código de ética do psicólogo:</p>
-					<p class="txt-form">"É dever do psicólogo respeitar o sigilo profissional a fim de proteger,  por meio da confidencialidade, a intimidade das pessoas, grupos ou organizações, a que tenha acesso no exercício profissional." </p>
-				</div>
-				<img id="button-form" src="imagens/right-arrow-brown.png">
 			</div>
-			<div id="magicform" class="formularios" >
-				<form class="form-form" action="/action_page.php">
-					<label class="form-label" for="name">Nome:
-						<input class="campo-form" type="text" id="name" name="name" value="">
-					</label>
+		</div>
+	</div>
 
-					<label class="form-label" for="idade">Idade:
-						<input class="campo-form" type="number" id="idade" name="idade" value="">
-					</label>
-
-					<label class="form-label" for="motivo">O que o motivou a procurar terapia?
-						<input class="campo-form" type="text" id="motivo" name="motivo" value="">
-					</label>
-
-					<label class="form-label" for="whats">WhatsApp para contato:
-						<input class="campo-form" type="tel" id="whats" name="whats" value="">
-					</label>
-
-					<label class="form-label" for="email"> E-mail para contato:
-						<input class="campo-form" type="email" id="email" name="email" value="">
-					</label>
-
-					<label class="form-label" for="date">Dias e horários disponíveis para sessões:
-						<input class="campo-form" type="date" id="date" name="date" value="">
-					</label>
-
-					<label class="form-label" for="preference">Preferência para sessões presenciais ou online?
-						<div>
-							<input class="" type="radio" id="preference" name="preference" value="Online">Online
-							<input class="" type="radio" id="preference" name="preference" value="Presencial">Presencial
-						</div>
-					</label>
-
-					<label  class="form-label" for="moreinfo">Mais alguma informação que você acha importante que eu saiba?:
-						<textarea class="campo-form" type="text" id="moreinfo" name="moreinfo" value=""></textarea></label>
-						<input class="submit-form" type="submit" value="Submit">
-					</form>
-
-				</div>
-				<img class="imagemform" src="imagens/formpic.gif">
+	<!------------- INSTAGRAM ----------------->
+	<div id="insta">
+		<div data-mc-src="3befce34-6356-4da9-a48a-15b6797da70c#instagram"></div>
+		<script src="https://cdn2.woxo.tech/a.js#62321b84b1ec2a0021f9c042" async data-usrc></script>
+		<div class="tanpom"></div>
+	</div>
+	<!------------- FORMULARIO ----------------->
+	<div id="formulario">
+		<div class="conteudo-form">
+			<h2 class="txt-form">Antes de preencher a lista, veja algumas informações sobre a terapia: </h2>
+			<ol>
+				<li class="list-form">Os atendimentos são baseados na Terapia Cognitiva;</li>
+				<li class="list-form">Cada sessão tem duração de 50 minutos;</li>
+				<li class="list-form">As sessões podem ser semanais ou quinzenais, sendo recomendado, inicialmente, a
+					frequência semanal;</li>
+				<li class="list-form">Os atendimentos são realizados na modalidade presencial ou online;</li>
+				<li class="list-form">As sessões são todas estruturadas, baseadas em objetivos e resolução de problemas;
+				</li>
+				<li class="list-form">Não atendo pessoas com menos de 18 anos de idade;</li>
+				<li class="list-form">Emito nota de todos atendimentos;</li>
+				<li class="list-form">Todo processo psicoterapêutico inicia-se com aceite de um contrato de prestação de
+					serviços;</li>
+				<li class="list-form">Para agendamento, solicito pagamento antecipado;</li>
+				<li class="list-form">Não divulgo valores aqui, por restrição do Código de Ética do Psicólogo;</li>
+				<li class="list-form">Os valores são baseados nas médias da Tabela de Honorários do Conselho Federal de
+					Psicologia;</li>
+			</ol>
+			<div class="obs-form">
+				<p class="txt-form">Obs: Todos seus dados serão resguardados em sigilo, de acordo com o Art. 9° do
+					código de ética do psicólogo:</p>
+				<p class="txt-form">"É dever do psicólogo respeitar o sigilo profissional a fim de proteger,  por meio
+					da confidencialidade, a intimidade das pessoas, grupos ou organizações, a que tenha acesso no
+					exercício profissional." </p>
 			</div>
-			<!------------- RODAPE ----------------->
-			<div class="rodape">
-				<div class="rodape-first">
-					<div class="logo-topo">
-						<span>GabrielleNavarro</span>
-						<span>Psicóloga</span>
+			<img id="button-form" src="imagens/right-arrow-brown.png">
+		</div>
+		<div id="magicform" class="formularios">
+			<form class="form-form" action="/action_page.php">
+				<label class="form-label" for="name">Nome:
+					<input class="campo-form" type="text" id="name" name="name" value="">
+				</label>
+
+				<label class="form-label" for="idade">Idade:
+					<input class="campo-form" type="number" id="idade" name="idade" value="">
+				</label>
+
+				<label class="form-label" for="motivo">O que o motivou a procurar terapia?
+					<input class="campo-form" type="text" id="motivo" name="motivo" value="">
+				</label>
+
+				<label class="form-label" for="whats">WhatsApp para contato:
+					<input class="campo-form" type="tel" id="whats" name="whats" value="">
+				</label>
+
+				<label class="form-label" for="email"> E-mail para contato:
+					<input class="campo-form" type="email" id="email" name="email" value="">
+				</label>
+
+				<label class="form-label" for="date">Dias e horários disponíveis para sessões:
+					<input class="campo-form" type="date" id="date" name="date" value="">
+				</label>
+
+				<label class="form-label" for="preference">Preferência para sessões presenciais ou online?
+					<div>
+						<input class="" type="radio" id="preference" name="preference" value="Online">Online
+						<input class="" type="radio" id="preference" name="preference" value="Presencial">Presencial
 					</div>
-					<p>adfk asfha asdbhakj dahdbajk dbad abda dasbd asd as dasb das db</p>
-				</div>
-				<div class="rodape-second">
-					<iframe class="mapa-rodape" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.890902113018!2d-46.53582748538635!3d-23.464399463902886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef542f15b1ea9%3A0xb52096cda6d685cf!2sR.%20Dr.%20Miguel%20Vi%C3%AAira%20Ferreira%2C%2057%20-%20Jardim%20Zaira%2C%20Guarulhos%20-%20SP%2C%2007095-070!5e0!3m2!1spt-BR!2sbr!4v1647458755600!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-				</div>
+				</label>
+
+				<label class="form-label" for="moreinfo">Mais alguma informação que você acha importante que eu saiba?:
+					<textarea class="campo-form" type="text" id="moreinfo" name="moreinfo" value=""></textarea></label>
+				<input class="submit-form" type="submit" value="Submit">
+			</form>
+
+		</div>
+		<img class="imagemform" src="imagens/formpic.gif">
+	</div>
+	<!------------- RODAPE ----------------->
+	<div class="rodape">
+		<div class="rodape-first">
+			<div class="logo-topo">
+				<span>GabrielleNavarro</span>
+				<span>Psicóloga</span>
 			</div>
+			<p>adfk asfha asdbhakj dahdbajk dbad abda dasbd asd as dasb das db</p>
+		</div>
+		<div class="rodape-second">
+			<iframe class="mapa-rodape"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.890902113018!2d-46.53582748538635!3d-23.464399463902886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef542f15b1ea9%3A0xb52096cda6d685cf!2sR.%20Dr.%20Miguel%20Vi%C3%AAira%20Ferreira%2C%2057%20-%20Jardim%20Zaira%2C%20Guarulhos%20-%20SP%2C%2007095-070!5e0!3m2!1spt-BR!2sbr!4v1647458755600!5m2!1spt-BR!2sbr"
+				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+	</div>
+	
 
-			<!------------- FIM ----------------->
+	<!------------- FIM ----------------->
 
 
-			<script src="js/javascript.js" type="text/javascript"></script>
+	<script src="js/javascript.js" type="text/javascript"></script>
 
-		</body>
-		</html>
+</body>
+
+</html>
