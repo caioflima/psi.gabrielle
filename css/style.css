@@ -45,12 +45,13 @@
 /*******************TOPO*******************/
 .topo {
 	width: 100%;
-	height: 106px;
+	height: 150px;
 	background-image: linear-gradient(1deg, #efcead, transparent);
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
+
 .topo-scroll .topo__fixo{
 	position: fixed;
 	top: 0;
@@ -58,6 +59,7 @@
 	z-index: 99;
 	background-color: #efcead;
 }
+
 .logo-topo {
 	font-family: 'Great Vibes', cursive;
 	color: #cc8a60;
@@ -75,21 +77,22 @@
 }
 
 .item__menu {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	font-family: 'Great Vibes';
 }
 
 /*******************SERVIÇOS*******************/
 #servicos {
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    background-color: #f8e8d9;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	background-color: #f8e8d9;
 	margin-top: 100px;
+	scroll-margin-top: 150px;
 }
 .servicos-tcc {
 	margin: 3rem 1rem 1rem 2rem;
-    width: 50%;
+	width: 50%;
 }
 .titulo-tcc {
 	padding: 10px;
@@ -130,9 +133,9 @@
 	font-family: 'Comic Neue', cursive;
 }
 .blocos h3 {
-    font-family: 'Great Vibes';
-    font-size: 2rem;
-    color: #cd8e66;
+	font-family: 'Great Vibes';
+	font-size: 2rem;
+	color: #cd8e66;
 }
 .blocos:hover{
 	border: 3px solid #cc8a60;
@@ -161,9 +164,9 @@
 	font-family: 'Comic Neue', cursive;
 }
 .blocos2 h3 {
-    font-family: 'Great Vibes';
-    font-size: 2rem;
-    color: #cd8e66;
+	font-family: 'Great Vibes';
+	font-size: 2rem;
+	color: #cd8e66;
 }
 .blocos2:hover{
 	border: 3px solid #cc8a60;
@@ -182,16 +185,16 @@
 }
 
 .botao-bloco {
-    width: 60%;
-    height: 12%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20%;
-    border-radius: 20px;
-    border-color: #e99f70;
+	width: 60%;
+	height: 12%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 20%;
+	border-radius: 20px;
+	border-color: #e99f70;
 	background-color: #e79d6e;
-    
+
 }
 
 .botao-bloco:hover{
@@ -215,6 +218,7 @@
 	display: flex;
 	height: 520px;
 	font-family: 'Comic Neue', cursive;
+	scroll-margin-top: 150px;
 }
 
 .quem-img {
@@ -234,12 +238,12 @@
 
 }
 .quem-txt h1 {
-    color: #cd8e66;
-    font-family: 'Great Vibes';
+	color: #cd8e66;
+	font-family: 'Great Vibes';
 }
 .quem-txt h2 {
-    color: #cd8e66;
-    font-family: 'Great Vibes';
+	color: #cd8e66;
+	font-family: 'Great Vibes';
 	font-size: 2rem;
 }
 .principais-demandas {
@@ -257,12 +261,17 @@
 
 /*******************INSTAGRAM*******************/
 
+#insta {
+	background-color: #f8e8d9;
+	scroll-margin-top: 160px;
+}
+
 .tanpom {
-    width: 100%;
-    height: 70px;
-    position: relative;
-    bottom: 45px;
-    background-color: white;
+	width: 100%;
+	height: 25px;
+	position: relative;
+	bottom: 45px;
+	background-color: #f8e8d9;
 }
 
 
@@ -275,6 +284,7 @@
 	flex-wrap: wrap;
 	position: relative;
 	font-family: 'Comic Neue', cursive;
+	scroll-margin-top: 150px;
 
 }
 .formularios {
@@ -295,7 +305,7 @@
 }
 
 .txt-form {
-    margin: 0 50px 0 0;
+	margin: 0 50px 0 0;
 }
 
 .form-form{
@@ -352,7 +362,7 @@
 
 .rodape {
 	width: 100%;
-	height: 5em;
+	height: 6em;
 	display: flex;
 }
 .rodape-first {
@@ -360,11 +370,229 @@
 	padding: 25px;
 }
 .logo-rodape {
-    font-family: 'Great Vibes', cursive;
-    color: #cc8a60;
-    font-size: 2.3em;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    
+	font-family: 'Great Vibes', cursive;
+	color: #cc8a60;
+	font-size: 2.3em;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+
+}
+.whatsapp-icon{
+	display: none;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+}
+
+.direito-1 {
+	height: 45px;
+	font-family: 'Comic Neue';
+	color: #bd5717;
+}
+
+@media (max-width: 1000px){
+
+	#formulario{
+		display: none;
+	}
+
+	#servicos{
+		display: block;
+	}
+
+	.servicos-tcc {
+		width: 96%;
+		padding-top: 20px;
+	}
+
+	.espaco-blocos {
+		padding-bottom: 30px;
+		justify-content: space-around;
+	}
+
+	.bloco-txt {
+		padding: 20px 0;
+	}
+
+	.img-whats {
+		position: fixed;
+		bottom: 52px;
+		right: 59px;
+	}
+
+	.whatsapp-icon {
+		display: block;
+		position: fixed;
+		right: 6%;
+		bottom: 7%;
+	}
+
+
+
+	.whatsapp-animate-circulo-pulse, .whatsapp-btn-bg {
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%
+	}
+
+	.animated.infinite {
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count: infinite
+	}
+
+	.zoomIn {
+		-webkit-animation-name: zoomIn;
+		animation-name: zoomIn
+	}
+
+	.animated {
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both
+	}
+
+
+	.whatsapp-btn {
+		display: none;
+		z-index: 999999;
+	}
+
+	.whatsapp-animate-circulo-pulse {
+		width: 90px;
+		height: 90px;
+		bottom: 28px;
+		right: 35px;
+		position: fixed;
+		background-color: transparent;
+		border-radius: 100%;
+		border: 2px solid rgba(30, 30, 30, .4);
+		opacity: .1;
+		z-index: 999999;
+		/* opacity: .5; */
+	}
+
+	.whatsapp-animate-circulo-pulse {
+		border-color: #f39d65fa;
+		z-index: 999999;
+	}
+
+	.whatsapp-btn-config {
+		width: 60px;
+		height: 58px;
+		bottom: 43px;
+		right: 50px;
+		position: fixed;
+		background: url(imagens/whatsappi.png) center center no-repeat rgba(30, 30, 30, .1);
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		opacity: 1;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-ms-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+		-webkit-transform-origin: 50% 50%;
+		-moz-transform-origin: 50% 50%;
+		-ms-transform-origin: 50% 50%;
+		-o-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		background-size: 100%;
+		z-index: 999999;
+	}
+
+
+
+	.whatsapp-btn-bg,
+	.whatsapp-btn-bg, .whatsapp-btn-config {
+		background-color: #cc8a604a
+	}
+
+
+	.tada {
+		-webkit-animation-name: tada;
+		animation-name: tada
+	}
+
+	@-webkit-keyframes tada {
+		from, to {
+			-webkit-transform: scale3d(1, 1, 1);
+			transform: scale3d(1, 1, 1)
+		}
+
+		10%, 20% {
+			-webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+			transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+		}
+
+		30%, 50%, 70%, 90% {
+			-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+			transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+		}
+
+		40%, 60%, 80% {
+			-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+			transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+		}
+	}
+
+	@keyframes tada {
+		from, to {
+			-webkit-transform: scale3d(1, 1, 1);
+			transform: scale3d(1, 1, 1)
+		}
+
+		10%, 20% {
+			-webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+			transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+		}
+
+		30%, 50%, 70%, 90% {
+			-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+			transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+		}
+
+		40%, 60%, 80% {
+			-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+			transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+		}
+	}
+
+	@-webkit-keyframes zoomIn {
+		from {
+			opacity: 0;
+			-webkit-transform: scale3d(.3, .3, .3);
+			transform: scale3d(.3, .3, .3)
+		}
+
+		50% {
+			opacity: 1
+		}
+	}
+
+	@keyframes zoomIn {
+		from {
+			opacity: 0;
+			-webkit-transform: scale3d(.3, .3, .3);
+			transform: scale3d(.3, .3, .3)
+		}
+
+		50% {
+			opacity: 1
+		}
+	}
+
+
+	.direito-1 {
+		padding: 0 5rem;
+	}
+
+}
+
+@media (max-width: 600px){
+
+
+
 }
