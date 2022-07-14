@@ -9,7 +9,7 @@ html, body {
 #carousel {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    top: 97px;
+    top: 134px;
 }
 
 .carousel-inner {
@@ -22,16 +22,18 @@ html, body {
     position: static;
     opacity: 100;
     box-shadow: 0px 0px 100px #cc8a60 inset;
+    background-size: contain;
 }
 
 .carousel-item {
-    height: 85vh;
     position: absolute;
     opacity: 0;
     box-shadow: 0px 0px 0px white inset;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out, box-shadow 2s;
     background-size: cover;
+    background-position: center center;
+    height: 95vh;
 }
 
 .carousel-item img {
@@ -41,15 +43,20 @@ html, body {
 }
 
 .carousel-item--1{
-    background-image:url(../imagens/banner01.jpeg);
+    background-image:url(../imagens/att1.jpg);
+    background-repeat: no-repeat
+    
 }
 
 .carousel-item--2{
-    background-image:url(../imagens/banner02.jpeg);
+    background-image:url(../imagens/att2.jpg);
+    background-repeat: no-repeat
+   
 }
 
 .carousel-item--3{
-    background-image:url(../imagens/banner05.jpeg);
+    background-image:url(../imagens/att3.jpg);
+     background-repeat: no-repeat
 }
 
 .carousel-control {
@@ -78,6 +85,7 @@ html, body {
 
 .carousel-control.next {
     right: 2%;
+    z-index: 9;
 }
 
 .carousel-control:hover {
@@ -165,4 +173,21 @@ html, body {
     color: #cc8a60;
 }
 
+@media (max-width: 750px){
+    #carousel{
+        display: none;
+    }
 
+   
+}
+@media (max-width: 950px){
+
+    .carousel-inner{
+        height: 85vh;
+    }
+
+    #carousel{
+        top: 135px;
+    }
+
+}

@@ -1,3 +1,6 @@
+
+
+
 let telaLoading = document.querySelector('.tela-loading');
 window.addEventListener('load', function(){
 	telaLoading.parentElement.removeChild(telaLoading);
@@ -11,6 +14,7 @@ buttonanimation.addEventListener('click', function(){
 	magicform.classList.toggle('animeformularios');
 
 })
+
 
 var i = 0;
 var txt = 'GabrielleNavarro'; /* The text */
@@ -55,5 +59,8 @@ $(document).ready(function(){
 		});
 	}
 });
+
+
+
 
 
